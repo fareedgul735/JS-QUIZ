@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import "./App.css";
 import QuestionCard from "./components/QuestionCard";
 import { questions } from "./data/Question";
 import Navbar from "./navbar/Navbar";
+
+
 
 const App = () => {
   const [current, setCurrent] = useState(0);

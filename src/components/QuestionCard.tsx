@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import type { QuestionType } from "../types/type";
 import "./QuestionCard.css"
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 type Props = {
     question: QuestionType;
@@ -21,14 +22,18 @@ const QuestionCard: React.FC<Props> = ({
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSelectedAnswer(e.target.value);
     };
-    const handlerNextBtn = () => {
+    const handlerNextBtn = async () => {
         if (selectedAnswer) {
             setTimeout(() => {
                 onAnswer(selectedAnswer)
                 setSelectedAnswer("")
-            }, 200)
+            }, 100)
         } else {
-            alert("Please Select the option!")
+            const popup = await Swal.fire({
+                text: "Please select the option??",
+                confirmButtonColor: "#0060f7",
+            });
+            return popup
         }
     }
 
