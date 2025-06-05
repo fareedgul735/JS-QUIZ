@@ -12,7 +12,6 @@ This is a modern, interactive **Quiz Application** built using **React** and **T
 - Dynamic score calculation based on correct answers
 - Shows:
   - Total marks
-  - Percentage
   - Pass or Fail result
 - Animated navbar with jumpy logo and call-to-action button
 - Professional modern UI (2025 style)
