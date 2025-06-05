@@ -1,0 +1,56 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    animation: jump-glow 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes jump-glow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        text-shadow: 0 0 0px #00f0ff;
+    }
+
+    50% {
+        transform: translateY(-5px);
+        text-shadow: 0 0 10px #00f0ff;
+    }
+}
+
+.get-started-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,21 @@
+.result {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.result h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.result p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.result h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
