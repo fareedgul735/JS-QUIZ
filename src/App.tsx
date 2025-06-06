@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import QuestionCard from "./components/QuestionCard";
 import { questions } from "./data/Question";
